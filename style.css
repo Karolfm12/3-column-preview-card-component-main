@@ -2,31 +2,35 @@
 p{
     font-size: 15px;
     font-family: 'Lexend Deca', sans-serif;
-    margin-bottom: 40px;
+    padding-bottom: 50px;
+    font-weight: 400;
 }
 h1{
     font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
 }
 
 section{
     height: 100vh;
-    background-color: lightgray;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     color: hsla(0, 0%, 100%, 0.75);
 }
+
 .container{
     position: relative;
     display: flex;
-    width: 40%;
-   
-    
+    width: 40%; 
 }
 
 .column1{
     background-color: hsl(31, 77%, 52%);
     padding: 40px;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px ;
+    
 }
 
 .column2{
@@ -37,15 +41,88 @@ section{
 .column3{
     background-color: hsl(179, 100%, 13%);
     padding: 40px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px ;
 }
 
-button{
+.btn{
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     font-size: 15px;
     background-color: white;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 30px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-style: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    border-color: white;
+    border: solid;
+   
     
+}
+
+.column1 .btn{
+    
+    color: hsl(31, 77%, 52%);
+}
+
+.column2 .btn{
+    color: hsl(184, 100%, 22%);
+}
+
+.column3 .btn{
+    color: hsl(179, 100%, 13%);
+}
+
+/* 
+hovers button
+*/
+
+.column1 .btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+    -webkit-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -ms-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    transition: background 0.3s linear;
+
+    
+}
+
+.column2 .btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: hsl(184, 100%, 22%);
+    -webkit-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -ms-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    transition: background 0.3s linear;
+}
+
+.column3 .btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+    -webkit-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -ms-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    transition: background 0.3s linear;
+}
+
+/* 
+Mobile
+*/
+@media only screen and (max-width: 768px){
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 40%; 
+}
 }
