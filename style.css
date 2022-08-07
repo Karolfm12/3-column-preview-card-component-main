@@ -4,6 +4,7 @@ p{
     font-family: 'Lexend Deca', sans-serif;
     padding-bottom: 50px;
     font-weight: 400;
+    min-width: 150px;
 }
 h1{
     font-family: 'Big Shoulders Display', cursive;
@@ -23,6 +24,7 @@ section{
     position: relative;
     display: flex;
     width: 40%; 
+    
 }
 
 .column1{
@@ -59,7 +61,7 @@ section{
     font-weight: 700;
     border-color: white;
     border: solid;
-   
+    min-width: 150px;
     
 }
 
@@ -124,5 +126,24 @@ Mobile
         display: flex;
         flex-direction: column;
         width: 40%; 
+}
+
+.btn{
+    position:relative;
+    bottom: 0px;
+}
+
+.column1{
+    border-top-right-radius:20px ;  
+    border-bottom-left-radius:0 ;
+}
+
+.column3{
+    border-bottom-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+    border-top-right-radius:0px ;
+}
+p{
+    padding-bottom: 15px;
 }
 }
